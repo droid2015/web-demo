@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  oracle:
+    image: container-registry.oracle.com/database/express:latest
+    container_name: platform-oracle
+    ports:
+      - "1521:1521"
+    environment:
+      - ORACLE_PWD=oracle
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+    healthcheck:
+      test: ["CMD", "sqlplus", "-L", "SYSTEM/oracle@//localhost:1521/XE", "@/dev/null"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: platform-backend
+    ports:
+      - "5000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__OracleConnection=User Id=SYSTEM;Password=oracle;Data Source=oracle:1521/XE
+      - Jwt__Secret=YourSecretKeyForJWTTokenGeneration123456
+      - Jwt__Issuer=PlatformAPI
+      - Jwt__Audience=PlatformClient
+    depends_on:
+      oracle:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: platform-frontend
+    ports:
+      - "3000:80"
+    environment:
+      - VITE_API_URL=http://localhost:5000/api
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  oracle-data:
