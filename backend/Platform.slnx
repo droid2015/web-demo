@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Platform.API/Platform.API.csproj" />
+  <Project Path="Platform.Core/Platform.Core.csproj" />
+  <Project Path="Platform.Infrastructure/Platform.Infrastructure.csproj" />
+  <Project Path="Platform.Modules.Base/Platform.Modules.Base.csproj" />
+  <Project Path="Platform.Modules.ProductManagement/Platform.Modules.ProductManagement.csproj" />
+</Solution>

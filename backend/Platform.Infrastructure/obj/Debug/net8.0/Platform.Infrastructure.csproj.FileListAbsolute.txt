@@ -1,0 +1,16 @@
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/bin/Debug/net8.0/Platform.Infrastructure.deps.json
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/bin/Debug/net8.0/Platform.Infrastructure.dll
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/bin/Debug/net8.0/Platform.Infrastructure.pdb
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/bin/Debug/net8.0/Platform.Core.dll
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/bin/Debug/net8.0/Platform.Core.pdb
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/obj/Debug/net8.0/Platform.Infrastructure.csproj.AssemblyReference.cache
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/obj/Debug/net8.0/Platform.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/obj/Debug/net8.0/Platform.Infrastructure.AssemblyInfoInputs.cache
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/obj/Debug/net8.0/Platform.Infrastructure.AssemblyInfo.cs
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/obj/Debug/net8.0/Platform.Infrastructure.csproj.CoreCompileInputs.cache
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/obj/Debug/net8.0/Platform.Infrastructure.sourcelink.json
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/obj/Debug/net8.0/Platform.A293A272.Up2Date
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/obj/Debug/net8.0/Platform.Infrastructure.dll
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/obj/Debug/net8.0/refint/Platform.Infrastructure.dll
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/obj/Debug/net8.0/Platform.Infrastructure.pdb
+/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/obj/Debug/net8.0/ref/Platform.Infrastructure.dll
