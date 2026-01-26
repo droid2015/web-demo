@@ -138,8 +138,54 @@ public class YourController : ControllerBase
 
 ### 9. Register Module in Platform.API
 
-Edit `Platform.API/Program.cs`:
+**The platform now uses automatic module discovery!** You no longer need to manually edit `Program.cs` to register your module. 
 
+The `ModuleLoader` utility automatically discovers and registers all modules that:
+1. Implement the `IModule` interface
+2. Are in assemblies referenced by Platform.API
+3. Have `IsEnabled` set to `true`
+
+**To enable your module:**
+
+1. Add a project reference to Platform.API:
+```bash
+dotnet add Platform.API reference Platform.Modules.YourModule
+```
+
+2. Build the solution:
+```bash
+dotnet build
+```
+
+That's it! Your module will be automatically discovered and registered when the application starts.
+
+**How it works:**
+
+The `ModuleLoader` class in Platform.API:
+- Scans all loaded assemblies for types implementing `IModule`
+- Automatically calls `Initialize()` on each module during startup
+- Automatically calls `Configure()` on each module after the app is built
+- Registers all module controllers with MVC
+
+You can see the automatic registration in action in `Platform.API/Program.cs`:
+```csharp
+// Discover and load all modules automatically
+var modules = ModuleLoader.DiscoverModules();
+
+// Add module controllers automatically
+ModuleLoader.AddModuleControllers(mvcBuilder, modules);
+
+// Initialize modules automatically
+ModuleLoader.InitializeModules(builder.Services, modules);
+
+// Later, after app.Build()...
+// Configure modules automatically
+ModuleLoader.ConfigureModules(app, modules);
+```
+
+**Legacy approach (no longer needed):**
+
+Previously, you had to manually edit `Platform.API/Program.cs`:
 ```csharp
 // Add reference to your module
 using Platform.Modules.YourModule;
@@ -151,6 +197,8 @@ yourModule.Initialize(builder.Services);
 // Configure module
 yourModule.Configure(app);
 ```
+
+This manual approach is no longer necessary thanks to automatic module discovery!
 
 ### 10. Create Database Schema
 
