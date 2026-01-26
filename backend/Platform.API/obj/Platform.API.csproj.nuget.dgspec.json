@@ -10,7 +10,7 @@
         "projectUniqueName": "/home/runner/work/web-demo/web-demo/backend/Platform.API/Platform.API.csproj",
         "projectName": "Platform.API",
         "projectPath": "/home/runner/work/web-demo/web-demo/backend/Platform.API/Platform.API.csproj",
-        "packagesPath": "/home/runner/work/web-demo/.codeql-scratch/dbs/csharp/working/packages",
+        "packagesPath": "/home/runner/.nuget/packages/",
         "outputPath": "/home/runner/work/web-demo/web-demo/backend/Platform.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -85,20 +85,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.23, 8.0.23]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[8.0.23, 8.0.23]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.23, 8.0.23]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -117,7 +103,7 @@
         "projectUniqueName": "/home/runner/work/web-demo/web-demo/backend/Platform.Core/Platform.Core.csproj",
         "projectName": "Platform.Core",
         "projectPath": "/home/runner/work/web-demo/web-demo/backend/Platform.Core/Platform.Core.csproj",
-        "packagesPath": "/home/runner/work/web-demo/.codeql-scratch/dbs/csharp/working/packages",
+        "packagesPath": "/home/runner/.nuget/packages/",
         "outputPath": "/home/runner/work/web-demo/web-demo/backend/Platform.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -179,16 +165,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.23, 8.0.23]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.23, 8.0.23]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -204,7 +180,7 @@
         "projectUniqueName": "/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/Platform.Infrastructure.csproj",
         "projectName": "Platform.Infrastructure",
         "projectPath": "/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/Platform.Infrastructure.csproj",
-        "packagesPath": "/home/runner/work/web-demo/.codeql-scratch/dbs/csharp/working/packages",
+        "packagesPath": "/home/runner/.nuget/packages/",
         "outputPath": "/home/runner/work/web-demo/web-demo/backend/Platform.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -262,16 +238,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.23, 8.0.23]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.23, 8.0.23]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -287,7 +253,7 @@
         "projectUniqueName": "/home/runner/work/web-demo/web-demo/backend/Platform.Modules.Base/Platform.Modules.Base.csproj",
         "projectName": "Platform.Modules.Base",
         "projectPath": "/home/runner/work/web-demo/web-demo/backend/Platform.Modules.Base/Platform.Modules.Base.csproj",
-        "packagesPath": "/home/runner/work/web-demo/.codeql-scratch/dbs/csharp/working/packages",
+        "packagesPath": "/home/runner/.nuget/packages/",
         "outputPath": "/home/runner/work/web-demo/web-demo/backend/Platform.Modules.Base/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -341,16 +307,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.23, 8.0.23]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.23, 8.0.23]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -366,7 +322,7 @@
         "projectUniqueName": "/home/runner/work/web-demo/web-demo/backend/Platform.Modules.ProductManagement/Platform.Modules.ProductManagement.csproj",
         "projectName": "Platform.Modules.ProductManagement",
         "projectPath": "/home/runner/work/web-demo/web-demo/backend/Platform.Modules.ProductManagement/Platform.Modules.ProductManagement.csproj",
-        "packagesPath": "/home/runner/work/web-demo/.codeql-scratch/dbs/csharp/working/packages",
+        "packagesPath": "/home/runner/.nuget/packages/",
         "outputPath": "/home/runner/work/web-demo/web-demo/backend/Platform.Modules.ProductManagement/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -426,16 +382,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.23, 8.0.23]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.23, 8.0.23]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

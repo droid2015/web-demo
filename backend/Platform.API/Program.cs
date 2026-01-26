@@ -3,13 +3,13 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
+using Platform.API;
 using Platform.API.Middleware;
 using Platform.Core.Domain.Entities;
 using Platform.Core.Domain.Interfaces;
 using Platform.Core.Services;
 using Platform.Infrastructure.Data;
 using Platform.Infrastructure.Data.Repositories;
-using Platform.Modules.ProductManagement;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,9 +22,14 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 
+// Discover and load all modules automatically
+var modules = ModuleLoader.DiscoverModules();
+
 // Add services to the container
-builder.Services.AddControllers()
-    .AddApplicationPart(typeof(ProductModule).Assembly); // Add module controllers
+var mvcBuilder = builder.Services.AddControllers();
+
+// Add module controllers automatically
+ModuleLoader.AddModuleControllers(mvcBuilder, modules);
 
 // Add CORS
 builder.Services.AddCors(options =>
@@ -83,9 +88,8 @@ builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ModuleService>();
 
-// Initialize modules
-var productModule = new ProductModule();
-productModule.Initialize(builder.Services);
+// Initialize modules automatically
+ModuleLoader.InitializeModules(builder.Services, modules);
 
 // Swagger configuration
 builder.Services.AddEndpointsApiExplorer();
@@ -145,8 +149,8 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// Configure modules
-productModule.Configure(app);
+// Configure modules automatically
+ModuleLoader.ConfigureModules(app, modules);
 
 Log.Information("Platform API starting...");
 
