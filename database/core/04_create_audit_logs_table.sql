@@ -1,0 +1,15 @@
+-- Create Audit Logs Table
+CREATE TABLE AUDIT_LOGS (
+    Id NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    UserId NUMBER,
+    Action VARCHAR2(100) NOT NULL,
+    EntityType VARCHAR2(100) NOT NULL,
+    EntityId NUMBER,
+    Changes CLOB,
+    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    FOREIGN KEY (UserId) REFERENCES USERS(Id) ON DELETE SET NULL
+);
+
+CREATE INDEX idx_audit_logs_userid ON AUDIT_LOGS(UserId);
+CREATE INDEX idx_audit_logs_createdat ON AUDIT_LOGS(CreatedAt);
+CREATE INDEX idx_audit_logs_entitytype ON AUDIT_LOGS(EntityType);
