@@ -3372,7 +3372,7 @@
     ]
   },
   "packageFolders": {
-    "/home/runner/.nuget/packages/": {}
+    "/home/runner/work/web-demo/.codeql-scratch/dbs/csharp/working/packages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -3380,7 +3380,7 @@
       "projectUniqueName": "/home/runner/work/web-demo/web-demo/backend/Platform.API/Platform.API.csproj",
       "projectName": "Platform.API",
       "projectPath": "/home/runner/work/web-demo/web-demo/backend/Platform.API/Platform.API.csproj",
-      "packagesPath": "/home/runner/.nuget/packages/",
+      "packagesPath": "/home/runner/work/web-demo/.codeql-scratch/dbs/csharp/working/packages",
       "outputPath": "/home/runner/work/web-demo/web-demo/backend/Platform.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
@@ -3455,6 +3455,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.23, 8.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[8.0.23, 8.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.23, 8.0.23]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
