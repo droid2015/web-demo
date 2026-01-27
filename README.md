@@ -28,7 +28,8 @@ Modular platform system with C# .NET 8 Backend, ReactJS Frontend, and Oracle Dat
 
 ### Prerequisites
 
-- .NET 8 SDK
+- .NET 8 SDK or later
+- Visual Studio 2022 or later (optional, for backend development)
 - Node.js 18+
 - Oracle Database 12c or higher (or Docker)
 
@@ -40,6 +41,17 @@ docker-compose up -d
 
 ### Manual Setup
 
+#### Building with Visual Studio
+
+1. Navigate to the `backend` folder
+2. Open `Platform.sln` in Visual Studio 2022 or later
+3. Right-click on the solution and select "Restore NuGet Packages"
+4. Build the solution using Build → Build Solution (Ctrl+Shift+B)
+5. Set `Platform.API` as the startup project
+6. Press F5 to run the API
+
+#### Building with Command Line
+
 See detailed setup instructions in the sections below.
 
 ## Default Credentials
@@ -49,6 +61,7 @@ See detailed setup instructions in the sections below.
 
 ## Documentation
 
+- [Visual Studio Build Guide](VISUAL_STUDIO_GUIDE.md) - How to build with Visual Studio (Vietnamese & English)
 - [Development Guide](DEVELOPMENT_GUIDE.md) - How to create new modules
 - [Backend README](backend/README.md) - Backend setup and API documentation
 - [Frontend README](frontend/README.md) - Frontend setup and development
