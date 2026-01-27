@@ -7,6 +7,50 @@
       "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|solutionrelative:platform.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC943}|Platform.Infrastructure\\Platform.Infrastructure.csproj|e:\\0.ai\\web-demo\\backend\\platform.infrastructure\\data\\oracledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC943}|Platform.Infrastructure\\Platform.Infrastructure.csproj|solutionrelative:platform.infrastructure\\data\\oracledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC943}|Platform.Infrastructure\\Platform.Infrastructure.csproj|e:\\0.ai\\web-demo\\backend\\platform.infrastructure\\data\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC943}|Platform.Infrastructure\\Platform.Infrastructure.csproj|solutionrelative:platform.infrastructure\\data\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC943}|Platform.Infrastructure\\Platform.Infrastructure.csproj|e:\\0.ai\\web-demo\\backend\\platform.infrastructure\\data\\repositories\\modulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC943}|Platform.Infrastructure\\Platform.Infrastructure.csproj|solutionrelative:platform.infrastructure\\data\\repositories\\modulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC943}|Platform.Infrastructure\\Platform.Infrastructure.csproj|e:\\0.ai\\web-demo\\backend\\platform.infrastructure\\data\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC943}|Platform.Infrastructure\\Platform.Infrastructure.csproj|solutionrelative:platform.infrastructure\\data\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC943}|Platform.Infrastructure\\Platform.Infrastructure.csproj|e:\\0.ai\\web-demo\\backend\\platform.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC943}|Platform.Infrastructure\\Platform.Infrastructure.csproj|solutionrelative:platform.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC945}|Platform.Modules.Base\\Platform.Modules.Base.csproj|e:\\0.ai\\web-demo\\backend\\platform.modules.base\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC945}|Platform.Modules.Base\\Platform.Modules.Base.csproj|solutionrelative:platform.modules.base\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC945}|Platform.Modules.Base\\Platform.Modules.Base.csproj|e:\\0.ai\\web-demo\\backend\\platform.modules.base\\modulebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC945}|Platform.Modules.Base\\Platform.Modules.Base.csproj|solutionrelative:platform.modules.base\\modulebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC946}|Platform.Modules.ProductManagement\\Platform.Modules.ProductManagement.csproj|e:\\0.ai\\web-demo\\backend\\platform.modules.productmanagement\\productmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC946}|Platform.Modules.ProductManagement\\Platform.Modules.ProductManagement.csproj|solutionrelative:platform.modules.productmanagement\\productmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC946}|Platform.Modules.ProductManagement\\Platform.Modules.ProductManagement.csproj|e:\\0.ai\\web-demo\\backend\\platform.modules.productmanagement\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC946}|Platform.Modules.ProductManagement\\Platform.Modules.ProductManagement.csproj|solutionrelative:platform.modules.productmanagement\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC946}|Platform.Modules.ProductManagement\\Platform.Modules.ProductManagement.csproj|e:\\0.ai\\web-demo\\backend\\platform.modules.productmanagement\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC946}|Platform.Modules.ProductManagement\\Platform.Modules.ProductManagement.csproj|solutionrelative:platform.modules.productmanagement\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC946}|Platform.Modules.ProductManagement\\Platform.Modules.ProductManagement.csproj|e:\\0.ai\\web-demo\\backend\\platform.modules.productmanagement\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC946}|Platform.Modules.ProductManagement\\Platform.Modules.ProductManagement.csproj|solutionrelative:platform.modules.productmanagement\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|e:\\0.ai\\web-demo\\backend\\platform.api\\moduleloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|solutionrelative:platform.api\\moduleloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|e:\\0.ai\\web-demo\\backend\\platform.api\\logs\\platform-20260127.log||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|solutionrelative:platform.api\\logs\\platform-20260127.log||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC946}|Platform.Modules.ProductManagement\\Platform.Modules.ProductManagement.csproj|e:\\0.ai\\web-demo\\backend\\platform.modules.productmanagement\\productmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC946}|Platform.Modules.ProductManagement\\Platform.Modules.ProductManagement.csproj|solutionrelative:platform.modules.productmanagement\\productmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +94,127 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoleRepository.cs",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.Infrastructure\\Data\\Repositories\\RoleRepository.cs",
+              "RelativeDocumentMoniker": "Platform.Infrastructure\\Data\\Repositories\\RoleRepository.cs",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.Infrastructure\\Data\\Repositories\\RoleRepository.cs",
+              "RelativeToolTip": "Platform.Infrastructure\\Data\\Repositories\\RoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T02:27:41.087Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "ModuleRepository.cs",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.Infrastructure\\Data\\Repositories\\ModuleRepository.cs",
+              "RelativeDocumentMoniker": "Platform.Infrastructure\\Data\\Repositories\\ModuleRepository.cs",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.Infrastructure\\Data\\Repositories\\ModuleRepository.cs",
+              "RelativeToolTip": "Platform.Infrastructure\\Data\\Repositories\\ModuleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T02:27:40.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.Infrastructure\\Data\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "Platform.Infrastructure\\Data\\Repositories\\GenericRepository.cs",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.Infrastructure\\Data\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "Platform.Infrastructure\\Data\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T02:27:35.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OracleDbContext.cs",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.Infrastructure\\Data\\OracleDbContext.cs",
+              "RelativeDocumentMoniker": "Platform.Infrastructure\\Data\\OracleDbContext.cs",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.Infrastructure\\Data\\OracleDbContext.cs",
+              "RelativeToolTip": "Platform.Infrastructure\\Data\\OracleDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T02:27:27.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "Platform.Infrastructure\\Class1.cs",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.Infrastructure\\Class1.cs",
+              "RelativeToolTip": "Platform.Infrastructure\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T02:27:24.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.Modules.Base\\Class1.cs",
+              "RelativeDocumentMoniker": "Platform.Modules.Base\\Class1.cs",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.Modules.Base\\Class1.cs",
+              "RelativeToolTip": "Platform.Modules.Base\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T02:27:19.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ModuleBase.cs",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.Modules.Base\\ModuleBase.cs",
+              "RelativeDocumentMoniker": "Platform.Modules.Base\\ModuleBase.cs",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.Modules.Base\\ModuleBase.cs",
+              "RelativeToolTip": "Platform.Modules.Base\\ModuleBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T02:27:13.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.Modules.ProductManagement\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Platform.Modules.ProductManagement\\Services\\ProductService.cs",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.Modules.ProductManagement\\Services\\ProductService.cs",
+              "RelativeToolTip": "Platform.Modules.ProductManagement\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T02:25:28.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.Modules.ProductManagement\\Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Platform.Modules.ProductManagement\\Domain\\Entities\\Product.cs",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.Modules.ProductManagement\\Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "Platform.Modules.ProductManagement\\Domain\\Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T02:25:25.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.Modules.ProductManagement\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Platform.Modules.ProductManagement\\Controllers\\ProductsController.cs",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.Modules.ProductManagement\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Platform.Modules.ProductManagement\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T02:25:14.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "launchSettings.json",
               "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Platform.API\\Properties\\launchSettings.json",
@@ -62,12 +222,11 @@
               "RelativeToolTip": "Platform.API\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-27T01:26:38.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T01:26:38.252Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "Platform.API.http",
               "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.API\\Platform.API.http",
               "RelativeDocumentMoniker": "Platform.API\\Platform.API.http",
@@ -75,12 +234,11 @@
               "RelativeToolTip": "Platform.API\\Platform.API.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-01-27T01:24:49.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T01:24:49.486Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "ModuleLoader.cs",
               "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.API\\ModuleLoader.cs",
               "RelativeDocumentMoniker": "Platform.API\\ModuleLoader.cs",
@@ -88,8 +246,7 @@
               "RelativeToolTip": "Platform.API\\ModuleLoader.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T01:24:47.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T01:24:47.904Z"
             },
             {
               "$type": "Document",
@@ -97,16 +254,16 @@
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.API\\Program.cs",
               "RelativeDocumentMoniker": "Platform.API\\Program.cs",
-              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.API\\Program.cs*",
-              "RelativeToolTip": "Platform.API\\Program.cs*",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAG0AAAAAAAAAAAAAAA==",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.API\\Program.cs",
+              "RelativeToolTip": "Platform.API\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T01:24:39.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "platform-20260127.log",
               "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.API\\logs\\platform-20260127.log",
               "RelativeDocumentMoniker": "Platform.API\\logs\\platform-20260127.log",
@@ -114,12 +271,11 @@
               "RelativeToolTip": "Platform.API\\logs\\platform-20260127.log",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2026-01-27T01:07:28.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T01:07:28.733Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.API\\appsettings.json",
               "RelativeDocumentMoniker": "Platform.API\\appsettings.json",
@@ -127,21 +283,19 @@
               "RelativeToolTip": "Platform.API\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-27T01:04:56.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T01:04:56.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ProductModule.cs",
               "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.Modules.ProductManagement\\ProductModule.cs",
               "RelativeDocumentMoniker": "Platform.Modules.ProductManagement\\ProductModule.cs",
               "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.Modules.ProductManagement\\ProductModule.cs",
               "RelativeToolTip": "Platform.Modules.ProductManagement\\ProductModule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T00:52:43.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T00:52:43.85Z"
             }
           ]
         },
