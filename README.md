@@ -26,6 +26,34 @@ Modular platform system with C# .NET 8 Backend, ReactJS Frontend, and Oracle Dat
 
 ## Quick Start
 
+### Hướng dẫn nhanh chạy Frontend (Vietnamese)
+
+**Yêu cầu:** Node.js 18+
+
+```bash
+# Di chuyển vào thư mục frontend
+cd frontend
+
+# Cài đặt thư viện
+npm install
+
+# Tạo file cấu hình
+cp .env.example .env
+
+# Chạy ứng dụng
+npm run dev
+```
+
+Truy cập: `http://localhost:5173`
+
+**Đăng nhập:**
+- Tên đăng nhập: `admin`
+- Mật khẩu: `Admin@123`
+
+📖 [Xem hướng dẫn chi tiết tiếng Việt](frontend/README.md)
+
+---
+
 ### Prerequisites
 
 - .NET 8 SDK or later

@@ -2,7 +2,52 @@
 
 React application with Vite, React Router, and Axios for API integration.
 
-## Setup
+## Hướng dẫn chạy Frontend (Vietnamese Instructions)
+
+### Yêu cầu trước khi cài đặt
+
+- Node.js phiên bản 18 trở lên
+- npm hoặc yarn
+
+### Các bước chạy ứng dụng
+
+1. **Di chuyển vào thư mục frontend:**
+   ```bash
+   cd frontend
+   ```
+
+2. **Cài đặt các thư viện cần thiết:**
+   ```bash
+   npm install
+   ```
+
+3. **Tạo file cấu hình môi trường:**
+   ```bash
+   cp .env.example .env
+   ```
+   
+   File `.env` sẽ chứa cấu hình kết nối API:
+   ```
+   VITE_API_URL=http://localhost:5000/api
+   ```
+
+4. **Chạy ứng dụng:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Truy cập ứng dụng:**
+   
+   Mở trình duyệt và truy cập: `http://localhost:5173`
+
+### Thông tin đăng nhập mặc định
+
+- **Tên đăng nhập**: admin
+- **Mật khẩu**: Admin@123
+
+---
+
+## Setup (English)
 
 ### Prerequisites
 
