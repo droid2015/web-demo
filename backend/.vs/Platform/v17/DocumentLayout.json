@@ -1,0 +1,161 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\0.AI\\web-demo\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|e:\\0.ai\\web-demo\\backend\\platform.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|solutionrelative:platform.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|e:\\0.ai\\web-demo\\backend\\platform.api\\moduleloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|solutionrelative:platform.api\\moduleloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|e:\\0.ai\\web-demo\\backend\\platform.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|solutionrelative:platform.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|e:\\0.ai\\web-demo\\backend\\platform.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|solutionrelative:platform.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|e:\\0.ai\\web-demo\\backend\\platform.api\\platform.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|solutionrelative:platform.api\\platform.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|e:\\0.ai\\web-demo\\backend\\platform.api\\logs\\platform-20260127.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC944}|Platform.API\\Platform.API.csproj|solutionrelative:platform.api\\logs\\platform-20260127.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC946}|Platform.Modules.ProductManagement\\Platform.Modules.ProductManagement.csproj|e:\\0.ai\\web-demo\\backend\\platform.modules.productmanagement\\productmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC946}|Platform.Modules.ProductManagement\\Platform.Modules.ProductManagement.csproj|solutionrelative:platform.modules.productmanagement\\productmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f53-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Platform.API\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Platform.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-27T01:26:38.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Platform.API.http",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.API\\Platform.API.http",
+              "RelativeDocumentMoniker": "Platform.API\\Platform.API.http",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.API\\Platform.API.http",
+              "RelativeToolTip": "Platform.API\\Platform.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-01-27T01:24:49.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ModuleLoader.cs",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.API\\ModuleLoader.cs",
+              "RelativeDocumentMoniker": "Platform.API\\ModuleLoader.cs",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.API\\ModuleLoader.cs",
+              "RelativeToolTip": "Platform.API\\ModuleLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T01:24:47.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.API\\Program.cs",
+              "RelativeDocumentMoniker": "Platform.API\\Program.cs",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.API\\Program.cs",
+              "RelativeToolTip": "Platform.API\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T01:24:39.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "platform-20260127.log",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.API\\logs\\platform-20260127.log",
+              "RelativeDocumentMoniker": "Platform.API\\logs\\platform-20260127.log",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.API\\logs\\platform-20260127.log",
+              "RelativeToolTip": "Platform.API\\logs\\platform-20260127.log",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-01-27T01:07:28.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Platform.API\\appsettings.json",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.API\\appsettings.json",
+              "RelativeToolTip": "Platform.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-27T01:04:56.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductModule.cs",
+              "DocumentMoniker": "E:\\0.AI\\web-demo\\backend\\Platform.Modules.ProductManagement\\ProductModule.cs",
+              "RelativeDocumentMoniker": "Platform.Modules.ProductManagement\\ProductModule.cs",
+              "ToolTip": "E:\\0.AI\\web-demo\\backend\\Platform.Modules.ProductManagement\\ProductModule.cs",
+              "RelativeToolTip": "Platform.Modules.ProductManagement\\ProductModule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T00:52:43.85Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 45,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

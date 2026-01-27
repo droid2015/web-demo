@@ -18,9 +18,12 @@ public static class ModuleLoader
         foreach (var assembly in loadedAssemblies)
         {
             // Skip system assemblies - only look in Platform.Modules.* assemblies
-            if (assembly.FullName == null || 
+            if (assembly.FullName == null ||
                 !assembly.FullName.StartsWith("Platform.Modules."))
+            {
+                Console.WriteLine($"=== ASSEMPLY {assembly.FullName}  ===");
                 continue;
+            }
 
             try
             {

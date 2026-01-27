@@ -10,9 +10,10 @@ using Platform.Core.Domain.Interfaces;
 using Platform.Core.Services;
 using Platform.Infrastructure.Data;
 using Platform.Infrastructure.Data.Repositories;
-
+using System.Reflection;
+// THÊM ALIAS
+using ModuleEntity = Platform.Core.Domain.Entities.Module;
 var builder = WebApplication.CreateBuilder(args);
-
 // Configure Serilog
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)
@@ -21,10 +22,34 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 
 builder.Host.UseSerilog();
+// Load module assemblies dynamically
+var binPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+if (binPath != null)
+{
+    var moduleFiles = Directory.GetFiles(binPath, "Platform.Modules.*.dll");
 
+    foreach (var moduleFile in moduleFiles)
+    {
+        try
+        {
+            var assembly = Assembly.LoadFrom(moduleFile);
+            Log.Information("Loaded module assembly: {AssemblyName}", assembly.GetName().Name);
+        }
+        catch (Exception ex)
+        {
+            Log.Warning(ex, "Failed to load module: {FileName}", Path.GetFileName(moduleFile));
+        }
+    }
+}
 // Discover and load all modules automatically
 var modules = ModuleLoader.DiscoverModules();
-
+// THÊM LOG DEBUG
+Console.WriteLine($"=== DISCOVERED {modules.Count} MODULES ===");
+foreach (var module in modules)
+{
+    Console.WriteLine($"- {module.Name} v{module.Version} (Enabled: {module.IsEnabled})");
+}
+Console.WriteLine("================================");
 // Add services to the container
 var mvcBuilder = builder.Services.AddControllers();
 
@@ -77,7 +102,7 @@ builder.Services.AddScoped<IRepository<Role>>(sp =>
     return new RoleRepository(context);
 });
 
-builder.Services.AddScoped<IRepository<Module>>(sp =>
+builder.Services.AddScoped<IRepository<ModuleEntity>>(sp =>
 {
     var context = sp.GetRequiredService<OracleDbContext>();
     return new ModuleRepository(context);

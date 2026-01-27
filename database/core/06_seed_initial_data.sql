@@ -11,14 +11,14 @@ INSERT INTO ROLES (Name, Description) VALUES ('Manager', 'Manager with extended 
 INSERT INTO ROLES (Name, Description) VALUES ('User', 'Standard user with basic permissions');
 
 -- Insert permissions
-INSERT INTO PERMISSIONS (Name, Resource, Action) VALUES ('user.create', 'user', 'create');
-INSERT INTO PERMISSIONS (Name, Resource, Action) VALUES ('user.read', 'user', 'read');
-INSERT INTO PERMISSIONS (Name, Resource, Action) VALUES ('user.update', 'user', 'update');
-INSERT INTO PERMISSIONS (Name, Resource, Action) VALUES ('user.delete', 'user', 'delete');
-INSERT INTO PERMISSIONS (Name, Resource, Action) VALUES ('product.create', 'product', 'create');
-INSERT INTO PERMISSIONS (Name, Resource, Action) VALUES ('product.read', 'product', 'read');
-INSERT INTO PERMISSIONS (Name, Resource, Action) VALUES ('product.update', 'product', 'update');
-INSERT INTO PERMISSIONS (Name, Resource, Action) VALUES ('product.delete', 'product', 'delete');
+INSERT INTO PERMISSIONS (Name, ResourceName, Action) VALUES ('user.create', 'user', 'create');
+INSERT INTO PERMISSIONS (Name, ResourceName, Action) VALUES ('user.read', 'user', 'read');
+INSERT INTO PERMISSIONS (Name, ResourceName, Action) VALUES ('user.update', 'user', 'update');
+INSERT INTO PERMISSIONS (Name, ResourceName, Action) VALUES ('user.delete', 'user', 'delete');
+INSERT INTO PERMISSIONS (Name, ResourceName, Action) VALUES ('product.create', 'product', 'create');
+INSERT INTO PERMISSIONS (Name, ResourceName, Action) VALUES ('product.read', 'product', 'read');
+INSERT INTO PERMISSIONS (Name, ResourceName, Action) VALUES ('product.update', 'product', 'update');
+INSERT INTO PERMISSIONS (Name, ResourceName, Action) VALUES ('product.delete', 'product', 'delete');
 
 -- Assign admin user to Admin role
 INSERT INTO USER_ROLES (UserId, RoleId)
