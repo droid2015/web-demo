@@ -6,10 +6,22 @@ ASP.NET Core Web API with .NET 8, Oracle database, and modular architecture.
 
 ### Prerequisites
 
-- .NET 8 SDK
+- .NET 8 SDK or later
+- Visual Studio 2022 or later (optional, for IDE development)
 - Oracle Database (or Docker container)
 
 ### Build and Run
+
+#### Using Visual Studio
+
+1. Open `Platform.sln` in Visual Studio 2022 or later
+2. Right-click on the solution and select "Restore NuGet Packages"
+3. Press F5 to build and run, or:
+   - Build → Build Solution (Ctrl+Shift+B)
+   - Debug → Start Debugging (F5)
+4. Set `Platform.API` as the startup project if not already set
+
+#### Using Command Line
 
 ```bash
 dotnet restore
