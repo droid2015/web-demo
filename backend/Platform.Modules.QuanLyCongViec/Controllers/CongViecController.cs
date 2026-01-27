@@ -124,6 +124,10 @@ public class CongViecController : ControllerBase
     {
         try
         {
+            var existingCongViec = await _congViecService.GetCongViecByIdAsync(id);
+            if (existingCongViec == null)
+                return NotFound(new { message = $"CongViec with ID {id} not found" });
+
             await _congViecService.DeleteCongViecAsync(id);
             return NoContent();
         }
