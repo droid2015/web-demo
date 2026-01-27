@@ -6,6 +6,7 @@ import Dashboard from '../components/modules/Dashboard';
 import UserList from '../components/modules/Users/UserList';
 import ModuleManager from '../components/modules/Modules/ModuleManager';
 import ProductList from '../components/modules/Products/ProductList';
+import CongViecList from '../components/modules/CongViec/CongViecList';
 
 const AppRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const AppRoutes = () => {
           <Route path="users" element={<UserList />} />
           <Route path="modules" element={<ModuleManager />} />
           <Route path="products" element={<ProductList />} />
+          <Route path="congviec" element={<CongViecList />} />
         </Route>
       </Routes>
     </Router>

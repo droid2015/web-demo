@@ -19,6 +19,10 @@ const Dashboard = () => {
           <h3>Products</h3>
           <p>Manage product catalog</p>
         </div>
+        <div className="dashboard-card">
+          <h3>Công Việc</h3>
+          <p>Quản lý công việc và theo dõi tiến độ</p>
+        </div>
       </div>
     </div>
   );

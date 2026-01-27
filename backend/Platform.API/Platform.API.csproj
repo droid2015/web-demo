@@ -18,6 +18,7 @@
     <ProjectReference Include="..\Platform.Infrastructure\Platform.Infrastructure.csproj" />
     <ProjectReference Include="..\Platform.Modules.Base\Platform.Modules.Base.csproj" />
     <ProjectReference Include="..\Platform.Modules.ProductManagement\Platform.Modules.ProductManagement.csproj" />
+    <ProjectReference Include="..\Platform.Modules.QuanLyCongViec\Platform.Modules.QuanLyCongViec.csproj" />
   </ItemGroup>
 
 </Project>

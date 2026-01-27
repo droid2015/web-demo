@@ -18,6 +18,9 @@ const Sidebar = () => {
           <li>
             <Link to="/products">Products</Link>
           </li>
+          <li>
+            <Link to="/congviec">Công Việc</Link>
+          </li>
         </ul>
       </nav>
     </aside>
