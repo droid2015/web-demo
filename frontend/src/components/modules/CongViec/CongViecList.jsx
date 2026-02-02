@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { congViecService } from '../../../services/congViecService';
 import { useAuth } from '../../../context/AuthContext';
 import CongViecForm from './CongViecForm';
@@ -13,7 +13,7 @@ const CongViecList = () => {
   const [filterUser, setFilterUser] = useState('all'); // 'all', 'my-tasks', 'created', 'assigned'
   const [showForm, setShowForm] = useState(false);
 
-  const loadCongViec = async () => {
+  const loadCongViec = useCallback(async () => {
     try {
       setLoading(true);
       let data;
@@ -39,11 +39,11 @@ const CongViecList = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [filterUser]);
 
   useEffect(() => {
     loadCongViec();
-  }, [filterUser]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [loadCongViec]);
 
   const handleDelete = async (id) => {
     if (window.confirm('Bạn có chắc chắn muốn xóa công việc này?')) {
