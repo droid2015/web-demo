@@ -1,0 +1,55 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                        QUẢN LÝ CÔNG VIỆC (Task Management)                  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                                                                              ║
+║  ┌─────────────────────────────────────────────────────────────────────┐   ║
+║  │ Hiển thị công việc: (User-based Filtering - NEW!)                   │   ║
+║  │  [Tất cả] [Công việc của tôi] [Tôi đã tạo] [Được giao cho tôi]    │   ║
+║  └─────────────────────────────────────────────────────────────────────┘   ║
+║                                                                              ║
+║  ┌─────────────────────────────────────────────────────────────────────┐   ║
+║  │ Lọc theo trạng thái: (Status Filtering - Existing)                  │   ║
+║  │  [Tất cả] [Mới] [Đang thực hiện] [Hoàn thành] [Hủy]                │   ║
+║  └─────────────────────────────────────────────────────────────────────┘   ║
+║                                                                              ║
+║  ┌──────────────────────────┐  ┌──────────────────────────┐                ║
+║  │ Công việc A              │  │ Công việc B              │                ║
+║  │ ┌──────────┐             │  │ ┌──────────┐             │                ║
+║  │ │ Cao      │ ┌────────┐  │  │ │ TrungBinh│ ┌────────┐  │                ║
+║  │ └──────────┘ │ Mới    │  │  │ └──────────┘ │ HoanThanh│ │                ║
+║  │              └────────┘  │  │              └────────┘  │                ║
+║  │                          │  │                          │                ║
+║  │ Mô tả công việc A        │  │ Mô tả công việc B        │                ║
+║  │                          │  │                          │                ║
+║  │ ─────────────────────    │  │ ─────────────────────    │                ║
+║  │ Ngày bắt đầu: 01/02/2026 │  │ Ngày bắt đầu: 28/01/2026 │                ║
+║  │ Ngày kết thúc: 15/02/2026│  │ Ngày kết thúc: 05/02/2026│                ║
+║  │ Người phụ trách: User #2 │  │ Người phụ trách: User #1 │                ║
+║  │ Người tạo: Bạn           │  │ Người tạo: User #3       │  <- NEW!       ║
+║  │                          │  │                          │                ║
+║  │            [Xóa]         │  │            [Xóa]         │                ║
+║  └──────────────────────────┘  └──────────────────────────┘                ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+KEY FEATURES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. NEW: User-based filtering buttons
+   - "Tất cả" (All): Shows all tasks in the system
+   - "Công việc của tôi" (My Tasks): Shows tasks created by OR assigned to current user
+   - "Tôi đã tạo" (Created by me): Shows only tasks created by current user  
+   - "Được giao cho tôi" (Assigned to me): Shows only tasks assigned to current user
+
+2. NEW: Creator information display
+   - Shows "Người tạo: Bạn" (Creator: You) for tasks created by current user
+   - Shows "Người tạo: User #X" for tasks created by other users
+
+3. AUTOMATIC: User ID capture on task creation
+   - When creating a new task, the system automatically records the creator's ID
+   - Uses JWT token authentication to identify the current user
+   - No manual input required
+
+4. SECURE: Permission-based access
+   - All endpoints protected with [Authorize] attribute
+   - User ID extracted from JWT claims
+   - No possibility to impersonate other users

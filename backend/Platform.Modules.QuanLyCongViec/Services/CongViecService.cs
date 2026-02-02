@@ -65,4 +65,31 @@ public class CongViecService
         var allCongViec = await _congViecRepository.GetAllAsync();
         return allCongViec.Where(cv => cv.TrangThai.Equals(trangThai, StringComparison.OrdinalIgnoreCase));
     }
+
+    /// <summary>
+    /// Get CongViec by User (created by or assigned to)
+    /// </summary>
+    public async Task<IEnumerable<CongViec>> GetCongViecByUserAsync(int userId)
+    {
+        var allCongViec = await _congViecRepository.GetAllAsync();
+        return allCongViec.Where(cv => cv.NguoiTaoId == userId || cv.NguoiPhuTrachId == userId);
+    }
+
+    /// <summary>
+    /// Get CongViec created by a specific user
+    /// </summary>
+    public async Task<IEnumerable<CongViec>> GetCongViecByCreatorAsync(int userId)
+    {
+        var allCongViec = await _congViecRepository.GetAllAsync();
+        return allCongViec.Where(cv => cv.NguoiTaoId == userId);
+    }
+
+    /// <summary>
+    /// Get CongViec assigned to a specific user
+    /// </summary>
+    public async Task<IEnumerable<CongViec>> GetCongViecByAssigneeAsync(int userId)
+    {
+        var allCongViec = await _congViecRepository.GetAllAsync();
+        return allCongViec.Where(cv => cv.NguoiPhuTrachId == userId);
+    }
 }

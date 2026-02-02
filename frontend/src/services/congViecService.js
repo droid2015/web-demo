@@ -16,6 +16,21 @@ export const congViecService = {
     return response.data;
   },
 
+  async getMyTasks() {
+    const response = await api.get('/congviec/my-tasks');
+    return response.data;
+  },
+
+  async getCreatedByMe() {
+    const response = await api.get('/congviec/created-by-me');
+    return response.data;
+  },
+
+  async getAssignedToMe() {
+    const response = await api.get('/congviec/assigned-to-me');
+    return response.data;
+  },
+
   async create(congViec) {
     const response = await api.post('/congviec', congViec);
     return response.data;
