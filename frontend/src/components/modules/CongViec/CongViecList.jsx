@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { congViecService } from '../../../services/congViecService';
+import CongViecForm from './CongViecForm';
 import './CongViecList.css';
 
 const CongViecList = () => {
@@ -7,6 +8,7 @@ const CongViecList = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [filterTrangThai, setFilterTrangThai] = useState('all');
+  const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
     loadCongViec();
@@ -37,6 +39,15 @@ const CongViecList = () => {
 
   const handleFilterChange = (trangThai) => {
     setFilterTrangThai(trangThai);
+  };
+
+  const handleFormSuccess = () => {
+    setShowForm(false);
+    loadCongViec();
+  };
+
+  const handleFormCancel = () => {
+    setShowForm(false);
   };
 
   const getFilteredCongViec = () => {
@@ -81,7 +92,20 @@ const CongViecList = () => {
     <div className="congviec-list">
       <div className="page-header">
         <h1>Quản Lý Công Việc</h1>
+        <button 
+          className="btn-add"
+          onClick={() => setShowForm(!showForm)}
+        >
+          {showForm ? 'Hủy' : 'Thêm công việc'}
+        </button>
       </div>
+
+      {showForm && (
+        <CongViecForm 
+          onSuccess={handleFormSuccess}
+          onCancel={handleFormCancel}
+        />
+      )}
 
       <div className="filter-bar">
         <button 
