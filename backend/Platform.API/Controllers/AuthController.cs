@@ -28,6 +28,8 @@ public class AuthController : ControllerBase
         }
 
         var token = _authService.GenerateJwtToken(user);
+        var roles = await _userService.GetUserRolesAsync(user.Id);
+        var modules = await _userService.GetUserModulesAsync(user.Id);
         
         return Ok(new
         {
@@ -36,7 +38,15 @@ public class AuthController : ControllerBase
             {
                 user.Id,
                 user.Username,
-                user.Email
+                user.Email,
+                roles = roles.ToList(),
+                modules = modules.Select(m => new
+                {
+                    m.Id,
+                    m.Name,
+                    m.Version,
+                    m.IsEnabled
+                }).ToList()
             }
         });
     }

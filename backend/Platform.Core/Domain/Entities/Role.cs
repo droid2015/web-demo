@@ -7,4 +7,5 @@ public class Role
     public string Description { get; set; } = string.Empty;
     public List<UserRole> UserRoles { get; set; } = new();
     public List<RolePermission> RolePermissions { get; set; } = new();
+    public List<RoleModule> RoleModules { get; set; } = new();
 }
