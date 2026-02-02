@@ -24,6 +24,11 @@ public class ModuleFunctionService
         return await _moduleFunctionRepository.GetAllAsync();
     }
 
+    /// <summary>
+    /// Get all functions for a specific module
+    /// Note: Currently uses in-memory filtering. For large datasets, consider
+    /// implementing database-level filtering by extending IRepository interface.
+    /// </summary>
     public async Task<IEnumerable<ModuleFunction>> GetFunctionsByModuleIdAsync(int moduleId)
     {
         var allFunctions = await _moduleFunctionRepository.GetAllAsync();

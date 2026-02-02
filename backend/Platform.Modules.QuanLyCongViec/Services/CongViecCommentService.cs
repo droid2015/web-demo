@@ -19,6 +19,11 @@ public class CongViecCommentService
         _congViecRepository = congViecRepository;
     }
 
+    /// <summary>
+    /// Get all comments for a specific CongViec
+    /// Note: Currently uses in-memory filtering. For large datasets, consider
+    /// implementing database-level filtering by extending IRepository interface.
+    /// </summary>
     public async Task<IEnumerable<CongViecComment>> GetCommentsByCongViecIdAsync(int congViecId)
     {
         var allComments = await _commentRepository.GetAllAsync();
