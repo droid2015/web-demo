@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../../context/AuthContext';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ onMenuToggle }) => {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
 
@@ -15,6 +15,9 @@ const Header = () => {
     <header className="header">
       <div className="header-content">
         <div className="header-logo">
+          <button className="menu-toggle" onClick={onMenuToggle} aria-label="Toggle menu">
+            ☰
+          </button>
           <Link to="/">Platform</Link>
         </div>
         

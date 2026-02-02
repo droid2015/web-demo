@@ -4,6 +4,7 @@
   align-items: center;
   min-height: 100vh;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1rem;
 }
 
 .login-card {
@@ -86,4 +87,19 @@
 
 .login-hint p {
   margin: 0.25rem 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+  .login-card {
+    padding: 1.5rem;
+  }
+
+  .login-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .login-hint {
+    font-size: 0.8rem;
+  }
 }
