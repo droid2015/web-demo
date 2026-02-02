@@ -45,10 +45,25 @@
 }
 
 /* Filter Bar */
+.filter-section {
+  margin-bottom: 30px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
 .filter-bar {
   display: flex;
   gap: 10px;
-  margin-bottom: 30px;
   flex-wrap: wrap;
 }
 

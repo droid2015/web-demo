@@ -1,23 +1,42 @@
 import { useState, useEffect } from 'react';
 import { congViecService } from '../../../services/congViecService';
+import { useAuth } from '../../../context/AuthContext';
 import CongViecForm from './CongViecForm';
 import './CongViecList.css';
 
 const CongViecList = () => {
+  const { user } = useAuth();
   const [congViecList, setCongViecList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [filterTrangThai, setFilterTrangThai] = useState('all');
+  const [filterUser, setFilterUser] = useState('all'); // 'all', 'my-tasks', 'created', 'assigned'
   const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
     loadCongViec();
-  }, []);
+  }, [filterUser]);
 
   const loadCongViec = async () => {
     try {
       setLoading(true);
-      const data = await congViecService.getAll();
+      let data;
+      
+      // Load based on user filter
+      switch (filterUser) {
+        case 'my-tasks':
+          data = await congViecService.getMyTasks();
+          break;
+        case 'created':
+          data = await congViecService.getCreatedByMe();
+          break;
+        case 'assigned':
+          data = await congViecService.getAssignedToMe();
+          break;
+        default:
+          data = await congViecService.getAll();
+      }
+      
       setCongViecList(data);
     } catch (err) {
       setError('Failed to load công việc');
@@ -39,6 +58,10 @@ const CongViecList = () => {
 
   const handleFilterChange = (trangThai) => {
     setFilterTrangThai(trangThai);
+  };
+
+  const handleUserFilterChange = (filter) => {
+    setFilterUser(filter);
   };
 
   const handleFormSuccess = () => {
@@ -107,37 +130,72 @@ const CongViecList = () => {
         />
       )}
 
-      <div className="filter-bar">
-        <button 
-          className={filterTrangThai === 'all' ? 'filter-btn active' : 'filter-btn'}
-          onClick={() => handleFilterChange('all')}
-        >
-          Tất cả
-        </button>
-        <button 
-          className={filterTrangThai === 'Mới' ? 'filter-btn active' : 'filter-btn'}
-          onClick={() => handleFilterChange('Mới')}
-        >
-          Mới
-        </button>
-        <button 
-          className={filterTrangThai === 'ĐangThucHien' ? 'filter-btn active' : 'filter-btn'}
-          onClick={() => handleFilterChange('ĐangThucHien')}
-        >
-          Đang thực hiện
-        </button>
-        <button 
-          className={filterTrangThai === 'HoanThanh' ? 'filter-btn active' : 'filter-btn'}
-          onClick={() => handleFilterChange('HoanThanh')}
-        >
-          Hoàn thành
-        </button>
-        <button 
-          className={filterTrangThai === 'Huy' ? 'filter-btn active' : 'filter-btn'}
-          onClick={() => handleFilterChange('Huy')}
-        >
-          Hủy
-        </button>
+      <div className="filter-section">
+        <div className="filter-group">
+          <label>Hiển thị công việc:</label>
+          <div className="filter-bar">
+            <button 
+              className={filterUser === 'all' ? 'filter-btn active' : 'filter-btn'}
+              onClick={() => handleUserFilterChange('all')}
+            >
+              Tất cả
+            </button>
+            <button 
+              className={filterUser === 'my-tasks' ? 'filter-btn active' : 'filter-btn'}
+              onClick={() => handleUserFilterChange('my-tasks')}
+            >
+              Công việc của tôi
+            </button>
+            <button 
+              className={filterUser === 'created' ? 'filter-btn active' : 'filter-btn'}
+              onClick={() => handleUserFilterChange('created')}
+            >
+              Tôi đã tạo
+            </button>
+            <button 
+              className={filterUser === 'assigned' ? 'filter-btn active' : 'filter-btn'}
+              onClick={() => handleUserFilterChange('assigned')}
+            >
+              Được giao cho tôi
+            </button>
+          </div>
+        </div>
+
+        <div className="filter-group">
+          <label>Lọc theo trạng thái:</label>
+          <div className="filter-bar">
+            <button 
+              className={filterTrangThai === 'all' ? 'filter-btn active' : 'filter-btn'}
+              onClick={() => handleFilterChange('all')}
+            >
+              Tất cả
+            </button>
+            <button 
+              className={filterTrangThai === 'Mới' ? 'filter-btn active' : 'filter-btn'}
+              onClick={() => handleFilterChange('Mới')}
+            >
+              Mới
+            </button>
+            <button 
+              className={filterTrangThai === 'ĐangThucHien' ? 'filter-btn active' : 'filter-btn'}
+              onClick={() => handleFilterChange('ĐangThucHien')}
+            >
+              Đang thực hiện
+            </button>
+            <button 
+              className={filterTrangThai === 'HoanThanh' ? 'filter-btn active' : 'filter-btn'}
+              onClick={() => handleFilterChange('HoanThanh')}
+            >
+              Hoàn thành
+            </button>
+            <button 
+              className={filterTrangThai === 'Huy' ? 'filter-btn active' : 'filter-btn'}
+              onClick={() => handleFilterChange('Huy')}
+            >
+              Hủy
+            </button>
+          </div>
+        </div>
       </div>
 
       <div className="congviec-grid">
@@ -172,6 +230,14 @@ const CongViecList = () => {
                 <div className="detail-row">
                   <span className="label">Người phụ trách:</span>
                   <span className="value">User #{congViec.nguoiPhuTrachId}</span>
+                </div>
+              )}
+              {congViec.nguoiTaoId && (
+                <div className="detail-row">
+                  <span className="label">Người tạo:</span>
+                  <span className="value">
+                    {congViec.nguoiTaoId === user?.id ? 'Bạn' : `User #${congViec.nguoiTaoId}`}
+                  </span>
                 </div>
               )}
             </div>

@@ -8,6 +8,7 @@ public class CongViec
     public string TrangThai { get; set; } = "Mới"; // Mới, ĐangThucHien, HoanThanh, Huy
     public string DoUuTien { get; set; } = "TrungBinh"; // Thap, TrungBinh, Cao, KhanCap
     public int? NguoiPhuTrachId { get; set; }
+    public int NguoiTaoId { get; set; } // User who created the task
     public DateTime NgayBatDau { get; set; }
     public DateTime? NgayKetThuc { get; set; }
     public DateTime NgayTao { get; set; } = DateTime.UtcNow;
