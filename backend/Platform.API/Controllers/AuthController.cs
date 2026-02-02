@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Platform.Core.Services;
 using Platform.Core.Domain.Entities;
+using Platform.Infrastructure.Services;
 
 namespace Platform.API.Controllers;
 
@@ -10,11 +11,13 @@ public class AuthController : ControllerBase
 {
     private readonly UserService _userService;
     private readonly AuthService _authService;
+    private readonly UserPermissionService _userPermissionService;
 
-    public AuthController(UserService userService, AuthService authService)
+    public AuthController(UserService userService, AuthService authService, UserPermissionService userPermissionService)
     {
         _userService = userService;
         _authService = authService;
+        _userPermissionService = userPermissionService;
     }
 
     [HttpPost("login")]
@@ -28,8 +31,8 @@ public class AuthController : ControllerBase
         }
 
         var token = _authService.GenerateJwtToken(user);
-        var roles = await _userService.GetUserRolesAsync(user.Id);
-        var modules = await _userService.GetUserModulesAsync(user.Id);
+        var roles = await _userPermissionService.GetUserRolesAsync(user.Id);
+        var modules = await _userPermissionService.GetUserModulesAsync(user.Id);
         
         return Ok(new
         {

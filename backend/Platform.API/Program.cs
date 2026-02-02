@@ -11,7 +11,7 @@ using Platform.Core.Services;
 using Platform.Infrastructure.Data;
 using Platform.Infrastructure.Data.Repositories;
 using System.Reflection;
-// THÊM ALIAS
+// THï¿½M ALIAS
 using ModuleEntity = Platform.Core.Domain.Entities.Module;
 var builder = WebApplication.CreateBuilder(args);
 // Configure Serilog
@@ -43,7 +43,7 @@ if (binPath != null)
 }
 // Discover and load all modules automatically
 var modules = ModuleLoader.DiscoverModules();
-// THÊM LOG DEBUG
+// THï¿½M LOG DEBUG
 Console.WriteLine($"=== DISCOVERED {modules.Count} MODULES ===");
 foreach (var module in modules)
 {
@@ -112,6 +112,7 @@ builder.Services.AddScoped<IRepository<ModuleEntity>>(sp =>
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ModuleService>();
+builder.Services.AddScoped<Platform.Infrastructure.Services.UserPermissionService>();
 
 // Initialize modules automatically
 ModuleLoader.InitializeModules(builder.Services, modules);
