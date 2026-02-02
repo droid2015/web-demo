@@ -94,3 +94,35 @@
   border-radius: 4px;
   margin-bottom: 1rem;
 }
+
+/* Tablet - 2 columns */
+@media (max-width: 1023px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .product-card {
+    padding: 1.25rem;
+  }
+}
+
+/* Mobile - 1 column */
+@media (max-width: 767px) {
+  .page-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .product-card {
+    padding: 1rem;
+  }
+
+  .product-price {
+    font-size: 1.1rem;
+  }
+}

@@ -2,6 +2,9 @@
   background-color: #667eea;
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header-content {
@@ -13,11 +16,28 @@
   align-items: center;
 }
 
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .header-logo a {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  line-height: 1;
 }
 
 .header-user {
@@ -42,4 +62,35 @@
 
 .btn-logout:hover {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Tablet and below - show hamburger menu */
+@media (max-width: 1023px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-content {
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* Mobile - compact header */
+@media (max-width: 767px) {
+  .header-content {
+    padding: 0.75rem 1rem;
+  }
+
+  .header-logo a {
+    font-size: 1.25rem;
+  }
+
+  .username {
+    display: none;
+  }
+
+  .btn-logout {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.875rem;
+  }
 }

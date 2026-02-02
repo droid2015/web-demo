@@ -7,4 +7,5 @@ public class Module
     public string Version { get; set; } = string.Empty;
     public bool IsEnabled { get; set; }
     public int LoadOrder { get; set; }
+    public List<RoleModule> RoleModules { get; set; } = new();
 }

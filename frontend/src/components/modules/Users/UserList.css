@@ -7,11 +7,13 @@
   border: 1px solid #dee2e6;
   border-radius: 8px;
   overflow: hidden;
+  overflow-x: auto;
 }
 
 .user-table {
   width: 100%;
   border-collapse: collapse;
+  min-width: 600px;
 }
 
 .user-table thead {
@@ -52,4 +54,17 @@
 .status.inactive {
   background-color: #f8d7da;
   color: #721c24;
+}
+
+/* Tablet and Mobile - responsive table */
+@media (max-width: 767px) {
+  .user-table th,
+  .user-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .user-table {
+    min-width: 500px;
+  }
 }

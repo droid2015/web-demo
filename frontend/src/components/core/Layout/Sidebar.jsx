@@ -1,29 +1,37 @@
 import { Link } from 'react-router-dom';
+import { usePermissions } from '../../../context/PermissionContext';
 import './Sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, onClose }) => {
+  const { hasModule } = usePermissions();
+
+  // Define module navigation items
+  const navItems = [
+    { path: '/', label: 'Dashboard', module: 'Core' },
+    { path: '/users', label: 'Users', module: 'Core' },
+    { path: '/modules', label: 'Modules', module: 'Core' },
+    { path: '/products', label: 'Products', module: 'ProductManagement' },
+    { path: '/congviec', label: 'Công Việc', module: 'QuanLyCongViec' },
+  ];
+
+  // Filter nav items based on user's module permissions
+  const authorizedItems = navItems.filter(item => hasModule(item.module));
+
   return (
-    <aside className="sidebar">
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Dashboard</Link>
-          </li>
-          <li>
-            <Link to="/users">Users</Link>
-          </li>
-          <li>
-            <Link to="/modules">Modules</Link>
-          </li>
-          <li>
-            <Link to="/products">Products</Link>
-          </li>
-          <li>
-            <Link to="/congviec">Công Việc</Link>
-          </li>
-        </ul>
-      </nav>
-    </aside>
+    <>
+      <div className={`sidebar-overlay ${isOpen ? 'open' : ''}`} onClick={onClose}></div>
+      <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
+        <nav>
+          <ul>
+            {authorizedItems.map((item) => (
+              <li key={item.path}>
+                <Link to={item.path} onClick={onClose}>{item.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </aside>
+    </>
   );
 };
 
