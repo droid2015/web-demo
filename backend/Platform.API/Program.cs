@@ -108,10 +108,17 @@ builder.Services.AddScoped<IRepository<ModuleEntity>>(sp =>
     return new ModuleRepository(context);
 });
 
+builder.Services.AddScoped<IRepository<ModuleFunction>>(sp =>
+{
+    var context = sp.GetRequiredService<OracleDbContext>();
+    return new GenericRepository<ModuleFunction>(context, "MODULE_FUNCTIONS");
+});
+
 // Register Services
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ModuleService>();
+builder.Services.AddScoped<ModuleFunctionService>();
 builder.Services.AddScoped<Platform.Infrastructure.Services.UserPermissionService>();
 
 // Initialize modules automatically

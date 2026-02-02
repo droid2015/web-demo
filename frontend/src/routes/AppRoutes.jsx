@@ -6,6 +6,7 @@ import MainLayout from '../components/core/Layout/MainLayout';
 import Dashboard from '../components/modules/Dashboard';
 import UserList from '../components/modules/Users/UserList';
 import ModuleManager from '../components/modules/Modules/ModuleManager';
+import ModuleFunctionManager from '../components/modules/ModuleFunctions/ModuleFunctionManager';
 import ProductList from '../components/modules/Products/ProductList';
 import CongViecList from '../components/modules/CongViec/CongViecList';
 
@@ -29,6 +30,11 @@ const AppRoutes = () => {
           <Route path="modules" element={
             <ModuleRoute module="Core">
               <ModuleManager />
+            </ModuleRoute>
+          } />
+          <Route path="module-functions" element={
+            <ModuleRoute module="Core">
+              <ModuleFunctionManager />
             </ModuleRoute>
           } />
           <Route path="products" element={

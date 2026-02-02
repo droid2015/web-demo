@@ -23,8 +23,16 @@ public class QuanLyCongViecModule : ModuleBase
             return new GenericRepository<CongViec>(context, "CONG_VIEC");
         });
 
-        // Register CongViec service
+        // Register CongViecComment repository
+        services.AddScoped<IRepository<CongViecComment>>(sp =>
+        {
+            var context = sp.GetRequiredService<OracleDbContext>();
+            return new GenericRepository<CongViecComment>(context, "CONG_VIEC_COMMENTS");
+        });
+
+        // Register services
         services.AddScoped<CongViecService>();
+        services.AddScoped<CongViecCommentService>();
     }
 
     public override void Configure(IApplicationBuilder app)
