@@ -111,7 +111,7 @@ builder.Services.AddScoped<IRepository<ModuleEntity>>(sp =>
 builder.Services.AddScoped<IRepository<ModuleFunction>>(sp =>
 {
     var context = sp.GetRequiredService<OracleDbContext>();
-    return new Repository<ModuleFunction>(context, "MODULE_FUNCTIONS");
+    return new GenericRepository<ModuleFunction>(context, "MODULE_FUNCTIONS");
 });
 
 // Register Services
