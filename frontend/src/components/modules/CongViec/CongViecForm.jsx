@@ -29,6 +29,13 @@ const CongViecForm = ({ onSuccess, onCancel }) => {
     setLoading(true);
 
     try {
+      // Validate date range
+      if (formData.ngayKetThuc && formData.ngayKetThuc < formData.ngayBatDau) {
+        setError('Ngày kết thúc không thể trước ngày bắt đầu');
+        setLoading(false);
+        return;
+      }
+
       // Convert dates to proper format for API
       const dataToSubmit = {
         ...formData,
@@ -137,6 +144,7 @@ const CongViecForm = ({ onSuccess, onCancel }) => {
               value={formData.ngayKetThuc}
               onChange={handleChange}
               disabled={loading}
+              min={formData.ngayBatDau}
             />
           </div>
         </div>
