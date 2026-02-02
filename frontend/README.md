@@ -102,3 +102,18 @@ VITE_API_URL=http://localhost:5000/api
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
+
+## Technical Documentation
+
+📚 **[Comprehensive Technical Documentation](TECHNICAL_DOCUMENTATION.md)**
+
+For detailed technical information including:
+- Complete architecture overview
+- Component structure and organization
+- Authentication and permission flow
+- API integration patterns
+- State management with Context API
+- Build and deployment processes
+- Best practices and troubleshooting
+
+Available in both Vietnamese and English.
