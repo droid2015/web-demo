@@ -13,10 +13,6 @@ const CongViecList = () => {
   const [filterUser, setFilterUser] = useState('all'); // 'all', 'my-tasks', 'created', 'assigned'
   const [showForm, setShowForm] = useState(false);
 
-  useEffect(() => {
-    loadCongViec();
-  }, [filterUser]);
-
   const loadCongViec = async () => {
     try {
       setLoading(true);
@@ -38,19 +34,23 @@ const CongViecList = () => {
       }
       
       setCongViecList(data);
-    } catch (err) {
+    } catch {
       setError('Failed to load công việc');
     } finally {
       setLoading(false);
     }
   };
 
+  useEffect(() => {
+    loadCongViec();
+  }, [filterUser]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const handleDelete = async (id) => {
     if (window.confirm('Bạn có chắc chắn muốn xóa công việc này?')) {
       try {
         await congViecService.delete(id);
         loadCongViec();
-      } catch (err) {
+      } catch {
         alert('Failed to delete công việc');
       }
     }

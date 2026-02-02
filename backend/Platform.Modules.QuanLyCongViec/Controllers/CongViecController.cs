@@ -86,7 +86,7 @@ public class CongViecController : ControllerBase
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out int userId))
             {
-                return Unauthorized(new { message = "User not authenticated" });
+                return StatusCode(401, new { message = "User not authenticated" });
             }
 
             var congViecList = await _congViecService.GetCongViecByUserAsync(userId);
@@ -109,7 +109,7 @@ public class CongViecController : ControllerBase
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out int userId))
             {
-                return Unauthorized(new { message = "User not authenticated" });
+                return StatusCode(401, new { message = "User not authenticated" });
             }
 
             var congViecList = await _congViecService.GetCongViecByCreatorAsync(userId);
@@ -132,7 +132,7 @@ public class CongViecController : ControllerBase
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out int userId))
             {
-                return Unauthorized(new { message = "User not authenticated" });
+                return StatusCode(401, new { message = "User not authenticated" });
             }
 
             var congViecList = await _congViecService.GetCongViecByAssigneeAsync(userId);
@@ -159,7 +159,7 @@ public class CongViecController : ControllerBase
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out int userId))
             {
-                return Unauthorized(new { message = "User not authenticated" });
+                return StatusCode(401, new { message = "User not authenticated" });
             }
 
             // Set the creator user ID
