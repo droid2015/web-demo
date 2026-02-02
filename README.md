@@ -95,6 +95,12 @@ See detailed setup instructions in the sections below.
 - [Frontend README](frontend/README.md) - Frontend setup and development
 - [Database README](database/README.md) - Database schema and migrations
 
+## Presentations
+
+- [**Presentation Slides**](PRESENTATION.md) - Comprehensive slides for team presentation (Vietnamese)
+- [**Interactive HTML Slides**](presentation.html) - Open in browser for interactive slideshow
+- [Presentation Guide](PRESENTATION_README.md) - How to use and present the slides
+
 ## Architecture
 
 This platform uses a modular architecture where functionality is divided into independent modules that can be enabled/disabled dynamically.
