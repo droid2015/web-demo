@@ -8,4 +8,5 @@ public class Module
     public bool IsEnabled { get; set; }
     public int LoadOrder { get; set; }
     public List<RoleModule> RoleModules { get; set; } = new();
+    public List<ModuleFunction> ModuleFunctions { get; set; } = new();
 }

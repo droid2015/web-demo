@@ -10,6 +10,7 @@ const Sidebar = ({ isOpen, onClose }) => {
     { path: '/', label: 'Dashboard', module: 'Core' },
     { path: '/users', label: 'Users', module: 'Core' },
     { path: '/modules', label: 'Modules', module: 'Core' },
+    { path: '/module-functions', label: 'Chức năng Module', module: 'Core' },
     { path: '/products', label: 'Products', module: 'ProductManagement' },
     { path: '/congviec', label: 'Công Việc', module: 'QuanLyCongViec' },
   ];

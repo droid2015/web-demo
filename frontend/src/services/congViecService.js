@@ -45,4 +45,25 @@ export const congViecService = {
     const response = await api.delete(`/congviec/${id}`);
     return response.data;
   },
+
+  // Comment methods
+  async getComments(congViecId) {
+    const response = await api.get(`/congviec/${congViecId}/comments`);
+    return response.data;
+  },
+
+  async createComment(congViecId, content) {
+    const response = await api.post(`/congviec/${congViecId}/comments`, { content });
+    return response.data;
+  },
+
+  async updateComment(congViecId, commentId, content) {
+    const response = await api.put(`/congviec/${congViecId}/comments/${commentId}`, { content });
+    return response.data;
+  },
+
+  async deleteComment(congViecId, commentId) {
+    const response = await api.delete(`/congviec/${congViecId}/comments/${commentId}`);
+    return response.data;
+  },
 };
