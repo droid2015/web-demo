@@ -93,6 +93,7 @@ See detailed setup instructions in the sections below.
 - [Development Guide](DEVELOPMENT_GUIDE.md) - How to create new modules
 - [Backend README](backend/README.md) - Backend setup and API documentation
 - [Frontend README](frontend/README.md) - Frontend setup and development
+- [**Frontend Technical Documentation**](frontend/TECHNICAL_DOCUMENTATION.md) - **Comprehensive React + Vite technical guide** (Vietnamese & English)
 - [Database README](database/README.md) - Database schema and migrations
 
 ## Presentations
